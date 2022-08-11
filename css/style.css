@@ -184,6 +184,21 @@ h6 {
   text-align: center;
 }
 
+/* ----------- About Page ----------- */
+/** Inner page grid container  */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  gap: 1.5rem;
+}
+
+.page-container>*:first-child {
+  grid-row: 1 / span 3;
+  /*? Article is being span down for 3 rows */
+  /*? This puts the aside into 1 grid row height */
+}
+
 /* -----------Navigation----------- */
 #main-nav {
   background-color: #fff;
